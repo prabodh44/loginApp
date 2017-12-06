@@ -1,6 +1,7 @@
 
 document.addEventListener('DOMContentLoaded', function () {
     
+    
     if(document.getElementById('saveBtn')){
         document.getElementById('saveBtn').addEventListener('click', insertData);
     }
@@ -9,13 +10,21 @@ document.addEventListener('DOMContentLoaded', function () {
         document.getElementById('loginBtn').addEventListener('click', loginData);
     }
 
+    if(document.getElementById('createUser')){
+       localStorage.setItem("prevScreen", "login.html");
+    }
+
     if(document.getElementById('changePassword')){
         var text = "Hello " + localStorage.getItem("username");
         document.querySelector("h2").innerHTML = text;
     }
 
     if(document.getElementById("confirmBtn")){
-        document.getElementById('confirmPassword').addEventListener('click', confirmPassword);
+        document.getElementById('confirmBtn').addEventListener('click', confirmPassword);
+    }
+
+    if(document.getElementById("backButton")){
+        document.getElementById('backButton').addEventListener('click', backButton);
     }
 });
 
@@ -42,38 +51,45 @@ function insertData(){
                 localStorage.setItem("username", username);
                 localStorage.setItem("password", password);
                 window.location.href = "newPage.html";
+                localStorage.setItem("prevScreen", "newUser.html");
             }
         });
     }else{
         alert("All fields must be filled");
     }
+
+    localStorage.setItem("prevScreen", "login.html");
 }
 
 function loginData(){
     var params = {
-        username: "",
-        password: ""
+        username: "admin",
+        password: "abcdef",
+        domain: "novago"
     };
-    var username = document.getElementById("username").value;
-    var password = document.getElementById("password").value;
-    if(username.length > 0 && password.length > 0){
-        params.username = username;
-        params.password = password; 
-        window.MyCordovaPlugin.isLoginDataPresent(params, function(status){
-            if(status == "OK"){
-                alert("you are logged in");
-                localStorage.setItem("username", username);
-                localStorage.setItem("password", password);
-                window.location.href = "newPage.html"
-            }else{
-                alert("Username or password incorrect");
-                document.getElementById("username").value = "";
-                document.getElementById("password").value = "";
-            }
-            });
-    }else{
-        alert("All fields must be filled");
-    }
+
+    window.MyCordovaPlugin.isLoginDataPresent(params);
+    // var username = document.getElementById("username").value;
+    // var password = document.getElementById("password").value;
+    // if(username.length > 0 && password.length > 0){
+    //     params.username = username;
+    //     params.password = password; 
+    //     window.MyCordovaPlugin.isLoginDataPresent(params, function(status){
+    //         if(status == "OK"){
+    //             alert("you are logged in");
+    //             localStorage.setItem("username", username);
+    //             localStorage.setItem("password", password);
+    //             window.location.href = "newPage.html"
+    //         }else{
+    //             alert("Username or password incorrect");
+    //             document.getElementById("username").value = "";
+    //             document.getElementById("password").value = "";
+    //         }
+    //         });
+    // }else{
+    //     alert("All fields must be filled");
+    // }
+    
 }
 
 // function showData(){
@@ -111,6 +127,12 @@ function confirmPassword(){
     }
     if(oldPassword == newPassword || oldPassword == retypePassword){
         alert("Password is same as previous");
+    }
+}
+
+function backButton(){
+    if(localStorage.getItem("prevScreen") !== ""){
+        window.location.href = localStorage.getItem("prevScreen");
     }
 }
 

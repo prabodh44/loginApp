@@ -10,7 +10,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../../../../cordova-plugin-template/src/ios/MyCordovaPlugin.m"
-            timestampString = "534236526.100775"
+            timestampString = "534250712.08671"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "10"
@@ -26,7 +26,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../../../../cordova-plugin-template/src/ios/MyCordovaPlugin.m"
-            timestampString = "534236526.101391"
+            timestampString = "534250712.087357"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "31"
@@ -42,7 +42,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../../../../cordova-plugin-template/src/ios/MyCordovaPlugin.m"
-            timestampString = "534236526.101855"
+            timestampString = "534250712.087854"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "47"
@@ -58,7 +58,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../../../../cordova-plugin-template/src/ios/MyCordovaPlugin.m"
-            timestampString = "534236526.102311"
+            timestampString = "534250712.088612"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "54"
@@ -74,7 +74,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../../../../cordova-plugin-template/src/ios/MyCordovaPlugin.m"
-            timestampString = "534236526.102768"
+            timestampString = "534250712.089172"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "41"
@@ -90,7 +90,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../../../../cordova-plugin-template/src/ios/MyCordovaPlugin.m"
-            timestampString = "534236526.103231"
+            timestampString = "534250712.089696"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "60"
@@ -106,7 +106,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../../../../cordova-plugin-template/src/ios/MyCordovaPlugin.m"
-            timestampString = "534236526.10369"
+            timestampString = "534250712.090191"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "58"
@@ -122,7 +122,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../../../../cordova-plugin-template/src/ios/MyCordovaPlugin.m"
-            timestampString = "534236526.10414"
+            timestampString = "534250712.09067"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "69"
@@ -138,28 +138,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../../../../cordova-plugin-template/src/ios/MyCordovaPlugin.m"
-            timestampString = "534236526.104593"
+            timestampString = "534250712.09115"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "87"
             endingLineNumber = "87"
             landmarkName = "-ActionCreateTable:"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "../../../../cordova-plugin-template/src/ios/MyCordovaPlugin.m"
-            timestampString = "534236526.10506"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "128"
-            endingLineNumber = "128"
-            landmarkName = "-ActionInsertIntoTable:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -186,27 +170,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../../../../cordova-plugin-template/src/ios/MyCordovaPlugin.m"
-            timestampString = "534236526.105539"
+            timestampString = "534250712.091669"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "152"
             endingLineNumber = "152"
-            landmarkName = "-ActionIsLoginDataPresent:"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "../../../../cordova-plugin-template/src/ios/MyCordovaPlugin.m"
-            timestampString = "534236526.105994"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "160"
-            endingLineNumber = "160"
             landmarkName = "-ActionIsLoginDataPresent:"
             landmarkType = "7">
          </BreakpointContent>
@@ -234,7 +202,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../../../../cordova-plugin-template/src/ios/MyCordovaPlugin.m"
-            timestampString = "534236526.10647"
+            timestampString = "534250712.092645"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "30"
@@ -250,7 +218,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../../../../cordova-plugin-template/src/ios/MyCordovaPlugin.m"
-            timestampString = "534236526.106929"
+            timestampString = "534250712.093124"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "138"
@@ -266,7 +234,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../../../../cordova-plugin-template/src/ios/MyCordovaPlugin.m"
-            timestampString = "534236526.107384"
+            timestampString = "534250712.093601"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "174"
@@ -282,12 +250,28 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../../../../cordova-plugin-template/src/ios/MyCordovaPlugin.m"
-            timestampString = "534236526.107834"
+            timestampString = "534250712.094072"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "183"
             endingLineNumber = "183"
             landmarkName = "-ActionUpdateUserData:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../../../cordova-plugin-template/src/ios/MyCordovaPlugin.m"
+            timestampString = "534250712.094548"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "128"
+            endingLineNumber = "128"
+            landmarkName = "-ActionInsertIntoTable:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
