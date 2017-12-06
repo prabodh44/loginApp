@@ -12,7 +12,10 @@ document.addEventListener('DOMContentLoaded', function () {
     if(document.getElementById('changePassword')){
         var text = "Hello " + localStorage.getItem("username");
         document.querySelector("h2").innerHTML = text;
-        document.getElementById('changePassword').addEventListener('click', changePassword);
+    }
+
+    if(document.getElementById("confirmBtn")){
+        document.getElementById('confirmPassword').addEventListener('click', confirmPassword);
     }
 });
 
@@ -79,8 +82,8 @@ function loginData(){
     
 // }
 
-function changePassword(){
-    var newPassword = prompt("Enter new password");
+function confirmPassword(){
+    //var newPassword = prompt("Enter new password");
     if(newPassword.length > 0){
         if(newPassword === localStorage.getItem("password")){
             alert("Same as previous password");
