@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+</head>
+<body>
+   <div class="container">
+       <div class="logo">
+           <img src="img/generic-logo.svg" alt="App logo" class="img-responsive">
+       </div>
+       <div class="row">
+           <div class="col-md-4 col-sm-2"></div>
+           <div class="col-md-4 col-sm-8">
+               <!-- login UI -->
+               <div class="form-group">
+                   <label for="username">Username</label>
+                   <input type="text" name="username" id="username" class="form-control form-control-lg">
+               </div>
+
+               <div class="form-group">
+                    <label for="username">Password</label>
+                    <input type="password" name="password" id="password" class="form-control form-control-lg">
+               </div>
+
+               <button class="btn btn-primary btn-block" id="loginBtn">Login</button>
+               <button class="btn btn-success btn-block">
+                   <a href="newUser.html">Create User</a>
+               </button>
+           </div>
+           <div class="col-md-4 col-sm-2"></div>
+       </div>
+   </div>
+</body>
+<script type="text/javascript" src="js/app.js"></script>
+<script type="text/javascript" src="cordova.js"></script>
+</html>
