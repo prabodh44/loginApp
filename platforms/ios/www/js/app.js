@@ -83,23 +83,34 @@ function loginData(){
 // }
 
 function confirmPassword(){
-    //var newPassword = prompt("Enter new password");
-    if(newPassword.length > 0){
-        if(newPassword === localStorage.getItem("password")){
-            alert("Same as previous password");
-        }else{
-            var params = {
-                username: "",
-                password: ""
-            };
+    // if(newPassword.length > 0){
+    //     if(newPassword === localStorage.getItem("password")){
+    //         alert("Same as previous password");
+    //     }else{
+    //         var params = {
+    //             username: "",
+    //             password: ""
+    //         };
             
-            params.username = localStorage.getItem("username");
-            params.password = newPassword;
-            window.MyCordovaPlugin.updateUserData(params);
-            alert("password has been changed");
-        }
-    }else{
-        alert("Password field cannot be empty");
+    //         params.username = localStorage.getItem("username");
+    //         params.password = newPassword;
+    //         window.MyCordovaPlugin.updateUserData(params);
+    //         alert("password has been changed");
+    //     }
+    // }else{
+    //     alert("Password field cannot be empty");
+    // }
+
+    var oldPassword = document.getElementById("old_password");
+    var newPassword = document.getElementById("new_password");
+    var retypePassword = document.getElementById("retype_password");
+
+    if(newPassword == retypePassword){
+        //TODO: encrypt the new password
+        alert("do something here");
+    }
+    if(oldPassword == newPassword || oldPassword == retypePassword){
+        alert("Password is same as previous");
     }
 }
 
