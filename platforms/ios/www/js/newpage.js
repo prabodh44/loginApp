@@ -1,5 +1,9 @@
 
-function setAllClickELement(){
+document.addEventListener('DOMContentLoaded', function () {
+    if(localStorage.getItem("savedParams")){
+        window.location.href = "newPage.html";
+    }
+    
     if(document.getElementById('saveBtn')){
         document.getElementById('saveBtn').addEventListener('click', insertData);
     }
@@ -8,16 +12,6 @@ function setAllClickELement(){
         document.getElementById('loginBtn').addEventListener('click', loginData);
     }
 
-}
-
-function checkAutoLogin(){
-    return (localStorage.getItem("savedParams"))?true:false;
-      
-
-}
-
-document.addEventListener('DOMContentLoaded', function () {
-  
     if(document.getElementById('createUser')){
        localStorage.setItem("prevScreen", "login.html");
     }
@@ -187,15 +181,5 @@ function backButton(){
 function logout(){
     localStorage.removeItem("savedParams");
     window.location.href = "login.html";
-}
-
-
-function init(){ 
-    setAllClickELement();
-    var status = checkAutoLogin();
-    if(status){
-        window.location.href = "newPage.html";
-    }
-    
 }
 

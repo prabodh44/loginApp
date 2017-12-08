@@ -1,8 +1,6 @@
 function checkAutoLogin(){
-    return (localStorage.getItem("savedParams"))?true:false;   
+    return (localStorage.getItem("userName") || localStorage.getItem("domainName") ? true : false);  
 }
-
-
 
 function loginData(){
     var params = {
@@ -77,59 +75,12 @@ function loginData(){
     
 // }
 
-function confirmPassword(){
-    // if(newPassword.length > 0){
-    //     if(newPassword === localStorage.getItem("password")){
-    //         alert("Same as previous password");
-    //     }else{
-    //         var params = {
-    //             username: "",
-    //             password: ""
-    //         };
-            
-    //         params.username = localStorage.getItem("username");
-    //         params.password = newPassword;
-    //         window.MyCordovaPlugin.updateUserData(params);
-    //         alert("password has been changed");
-    //     }
-    // }else{
-    //     alert("Password field cannot be empty");
-    // }
-
-    var oldPassword = document.getElementById("old_password");
-    var newPassword = document.getElementById("new_password");
-    var retypePassword = document.getElementById("retype_password");
-
-    if(newPassword == retypePassword){
-        //TODO: encrypt the new password
-        alert("do something here");
-    }
-    if(oldPassword == newPassword || oldPassword == retypePassword){
-        alert("Password is same as previous");
-    }
-}
-
-function backButton(){
-    if(localStorage.getItem("prevScreen") !== ""){
-        window.location.href = localStorage.getItem("prevScreen");
-    }
-}
-
-function logout(){
-    localStorage.removeItem("savedParams");
-    window.location.href = "login.html";
-}
-
-
 function init(){ 
     document.getElementById('loginBtn').addEventListener('click', loginData);
-
     var status = checkAutoLogin();
-
     if(status){
         window.location.href = "newPage.html";
-    }
-    
+    } 
 }
 
 init();
