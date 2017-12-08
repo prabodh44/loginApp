@@ -25,7 +25,8 @@ var app = {
     // Application Constructor
     initialize: function() {
         document.addEventListener('deviceready', this.onDeviceReady.bind(this), false);
-        document.getElementById('gotologin').addEventListener('click', gotologin);
+        window.location.href = "login.html";
+        // document.getElementById('gotologin').addEventListener('click', gotologin);
     },
 
     // deviceready Event Handler
